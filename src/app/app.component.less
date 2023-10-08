@@ -1,0 +1,32 @@
+:host {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+
+    .main {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: stretch;
+
+        .cmp {
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+            justify-content: stretch;
+            height: 100%;
+            flex: 0 0 50%;
+
+            input {
+                flex: 0 0 auto;
+            }
+
+            img {
+                width: 100%;
+                flex: 1 1 100%;
+            }
+        }
+    }
+}
