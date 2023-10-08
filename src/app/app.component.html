@@ -1,12 +1,13 @@
 <div class="main">
   <div class='cmp' *ngIf='inited'>
     <h2>בחירת אוסף תמונות...</h2>
+    <h3>{{msg2}}</h3>
     <input #cmp2 type="file" (change)="uploadImages()" accept=".jpg, .jpeg, .png" multiple="true">
     <img #cmp2img [src]='src2'>
   </div>
   <div class='cmp' *ngIf='matcher'>
     <h2>בחירת תמונה להשוואה...</h2>
-    <h3>{{msg}}</h3>
+    <h3>{{msg1}}</h3>
     <input #cmp1 type="file" (change)="uploadImage()" accept=".jpg, .jpeg, .png">
     <img #cmp1img [src]='src1'>
   </div>
